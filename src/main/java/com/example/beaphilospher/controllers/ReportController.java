@@ -1,3 +1,7 @@
+package com.example.beaphilospher.controllers;
+
+import com.example.beaphilospher.controllers.PersonController;
+
 public class ReportController {
     private int id;
     private String description;

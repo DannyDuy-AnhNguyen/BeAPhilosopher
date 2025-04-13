@@ -1,5 +1,8 @@
+package com.example.beaphilospher.controllers;
+
 import org.mindrot.jbcrypt.BCrypt;
-import Database.DatabaseConnection;
+import com.example.beaphilospher.Database.DatabaseConnection;
+//import com.example.beaphilospher.Handlers.Handler;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

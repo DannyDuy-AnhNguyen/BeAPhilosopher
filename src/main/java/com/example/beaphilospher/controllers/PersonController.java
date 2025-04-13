@@ -1,3 +1,5 @@
+package com.example.beaphilospher.controllers;
+
 abstract public class PersonController {
     protected int id;
     protected String firstName;

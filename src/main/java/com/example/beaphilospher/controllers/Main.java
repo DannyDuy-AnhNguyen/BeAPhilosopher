@@ -1,5 +1,8 @@
-import Database.DatabaseConnection;
-import Handlers.Handler;
+package com.example.beaphilospher.controllers;
+
+import com.example.beaphilospher.Database.DatabaseConnection;
+//import com.example.beaphilospher.Handlers.Handler;
+
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -9,7 +12,7 @@ public class Main {
         DatabaseConnection database = new DatabaseConnection();
         database.getConnection();
         Scanner scanner = new Scanner(System.in);
-        Handler handler = new Handler();
+//        Handler handler = new Handler();
         System.out.println("Welcome to BeAPhilosopher!\nType something except for 'stop'");
         String command = scanner.nextLine();
         while(!command.equals("stop")){
@@ -28,29 +31,29 @@ public class Main {
                     String email = "";
                     String telephone = "";
                     String password = "";
-                    ArrayList<String> data = handler.enterRegister();
-                    for(int i = 0; i < data.size(); i++) {
-                        switch (i) {
-                            case 0:
-                                firstname = data.get(i);
-                                break;
-                            case 1:
-                                lastname = data.get(i);
-                                break;
-                            case 2:
-                                username = data.get(i);
-                                break;
-                            case 3:
-                                email = data.get(i);
-                                break;
-                            case 4:
-                                telephone = data.get(i);
-                                break;
-                            case 5:
-                                password = data.get(i);
-                                break;
-                        }
-                    }
+//                    ArrayList<String> data = handler.enterRegister();
+//                    for(int i = 0; i < data.size(); i++) {
+//                        switch (i) {
+//                            case 0:
+//                                firstname = data.get(i);
+//                                break;
+//                            case 1:
+//                                lastname = data.get(i);
+//                                break;
+//                            case 2:
+//                                username = data.get(i);
+//                                break;
+//                            case 3:
+//                                email = data.get(i);
+//                                break;
+//                            case 4:
+//                                telephone = data.get(i);
+//                                break;
+//                            case 5:
+//                                password = data.get(i);
+//                                break;
+//                        }
+//                    }
                         UserController theUser = new UserController(firstname, lastname, username, email, telephone, password);
 //                        Registering user
                         theUser.registerUser(theUser);

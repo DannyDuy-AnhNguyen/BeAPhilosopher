@@ -1,3 +1,5 @@
+package com.example.beaphilospher.controllers;
+
 public class QuoteController {
     private int id;
     private String text;

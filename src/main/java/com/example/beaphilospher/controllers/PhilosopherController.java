@@ -1,3 +1,5 @@
+package com.example.beaphilospher.controllers;
+
 public class PhilosopherController extends PersonController {
     private int yearOfBirth;
     private int yearOfDeath;

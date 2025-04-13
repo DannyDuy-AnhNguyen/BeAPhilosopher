@@ -1,3 +1,5 @@
+package com.example.beaphilospher.controllers;
+
 public class CommentController {
     private int id;
     private String description;

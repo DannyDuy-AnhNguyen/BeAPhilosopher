@@ -1,3 +1,5 @@
+package com.example.beaphilospher.controllers;
+
 public class ArticleController {
     private int article;
     private String branch;
